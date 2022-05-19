@@ -1,0 +1,171 @@
+@font-face {
+    font-family: NunitoBold;
+    src: url(../font/NunitoBold.ttf);
+}
+
+@font-face {
+  font-family: android;
+  src: url(../font/android.ttf);
+}
+
+@font-face {
+  font-family: alien;
+  src: url(../font/AlienRavager-0WYod.ttf);
+}
+
+#android {
+  font-family: android;
+}
+
+#alien {
+  font-family: alien;
+}
+
+.accordion {
+  background-color: #101010;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #5FBB46;
+  color: #101010;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #101010;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #101010;
+  border: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+#justify {
+  text-align: justify;
+}
+
+.text-space-yellow {
+    color: #5FBB46;
+}
+
+.text-space-black {
+    color: #101010;
+}
+
+html,
+body {
+    font-family: NunitoBold;
+    background-color: #101010;
+    -webkit-font-smoothing: antialiased;
+    scrollbar-width: none;
+    -ms-overflow-style: none
+}
+
+body::-webkit-scrollbar {
+    display: none
+}
+
+::-moz-selection {
+    color: #101010;
+    background: #5FBB46
+}
+
+::selection {
+    color: #101010;
+    background: #5FBB46
+}
+
+.dropdown:hover > .dropdown-content {
+	display: block;
+}
+
+.sk-chase {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    animation: sk-chase 2.5s infinite linear both;
+  }
+  
+  .sk-chase-dot {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    animation: sk-chase-dot 2.0s infinite ease-in-out both; 
+  }
+  
+  .sk-chase-dot:before {
+    content: '';
+    display: block;
+    width: 25%;
+    height: 25%;
+    background-color: #5FBB46;
+    border-radius: 100%;
+    animation: sk-chase-dot-before 2.0s infinite ease-in-out both; 
+  }
+  
+  .sk-chase-dot:nth-child(1) { animation-delay: -1.1s; }
+  .sk-chase-dot:nth-child(2) { animation-delay: -1.0s; }
+  .sk-chase-dot:nth-child(3) { animation-delay: -0.9s; }
+  .sk-chase-dot:nth-child(4) { animation-delay: -0.8s; }
+  .sk-chase-dot:nth-child(5) { animation-delay: -0.7s; }
+  .sk-chase-dot:nth-child(6) { animation-delay: -0.6s; }
+  .sk-chase-dot:nth-child(1):before { animation-delay: -1.1s; }
+  .sk-chase-dot:nth-child(2):before { animation-delay: -1.0s; }
+  .sk-chase-dot:nth-child(3):before { animation-delay: -0.9s; }
+  .sk-chase-dot:nth-child(4):before { animation-delay: -0.8s; }
+  .sk-chase-dot:nth-child(5):before { animation-delay: -0.7s; }
+  .sk-chase-dot:nth-child(6):before { animation-delay: -0.6s; }
+  
+  @keyframes sk-chase {
+    100% { transform: rotate(360deg); } 
+  }
+  
+  @keyframes sk-chase-dot {
+    80%, 100% { transform: rotate(360deg); } 
+  }
+  
+  @keyframes sk-chase-dot-before {
+    50% {
+      transform: scale(0.4); 
+    } 100%, 0% {
+      transform: scale(1.0); 
+    } 
+  }
+
+  .spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #101010;
+    z-index: 999999;
+    }
+
+    .spinner {
+        position: absolute;
+top: 48%;
+left: 48%;
+    }

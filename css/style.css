@@ -19,6 +19,7 @@
 
 #alien {
   font-family: alien;
+  font-kerning: auto;
 }
 
 .accordion {

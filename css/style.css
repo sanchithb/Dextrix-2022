@@ -22,6 +22,7 @@
   font-kerning: auto;
 }
 
+
 .accordion {
   background-color: #101010;
   color: white;
@@ -170,3 +171,4 @@ body::-webkit-scrollbar {
 top: 48%;
 left: 48%;
     }
+
